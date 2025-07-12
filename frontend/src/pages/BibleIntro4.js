@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const BibleIntro4 = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-[#fffdf5] text-[#3a2c1f] p-6 font-['Noto Serif Tamil'] leading-relaxed text-[17px]">
-      <h1 className="text-3xl font-bold text-center mb-8">📖 திருவிவிலியம் - மொழிபெயர்ப்பு முன்னுரை</h1>
+      <h1 className="text-3xl font-bold text-center mb-8">📖 திருவிவிலியம் - பொது மொழிபெயர்ப்பு</h1>
       
       <div className="max-w-5xl mx-auto whitespace-pre-line text-justify">
 {`( இணைத் திருமுறையுடன் )
@@ -36,6 +38,16 @@ TINDIVANAM-604 002, TAMIL NADU, INDIA
 
 இதன் மூலம் இறையாட்சி வருக! இறைவாக்கு ஒளிர்க!`}
       </div>
+      {/* Back Button */}
+      <div className="text-center mt-12">
+        <button
+          onClick={() => navigate(-1)}
+          className="bg-pink-200 hover:bg-pink-300 text-pink-900 font-semibold px-6 py-2 rounded-lg shadow-md transition"
+        >
+          ← பின்செல் (Back)
+        </button>
+      </div>
+
     </div>
   );
 };

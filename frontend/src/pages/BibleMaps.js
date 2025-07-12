@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const maps = [
   {
     title: '🌍 உலகப்படத்தில் விவிலிய நாடுகள்',
@@ -34,9 +34,10 @@ const maps = [
 ];
 
 const BibleMaps = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-[#fffdf5] text-[#3a2c1f] p-6 font-['Noto Serif Tamil'] min-h-screen">
-      <h1 className="text-3xl font-bold text-center mb-10">🗺️ திருவிவிலிய வரைபடங்கள்</h1>
+      <h1 className="text-3xl font-bold text-center mb-10">🗺️ உலகப் படத்தில் விவிலிய நாடுகள்</h1>
 
       <div className="grid gap-10 max-w-6xl mx-auto">
         {maps.map((map, index) => (
@@ -53,7 +54,19 @@ const BibleMaps = () => {
       </div>
 
       <p className="mt-10 text-center text-sm text-gray-600">© அனைத்து வரைபடங்களும் கல்விக்காக பயன்படுத்தப்படுகிறது.</p>
+      {/* Back Button */}
+      <div className="text-center mt-12">
+        <button
+          onClick={() => navigate(-1)}
+          className="bg-pink-200 hover:bg-pink-300 text-pink-900 font-semibold px-6 py-2 rounded-lg shadow-md transition"
+        >
+          ← பின்செல் (Back)
+        </button>
+      </div>
+
     </div>
+
+    
   );
 };
 

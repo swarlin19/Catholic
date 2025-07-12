@@ -4,8 +4,16 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Bible from './pages/Bible';
-import BibleTimeline from './pages/BibleTimeline';
 import Prayers from './pages/Prayers';
+
+import BibleIntro1 from './pages/BibleIntro1';
+import BibleIntro2 from './pages/BibleIntro2';
+import BibleTimeline from './pages/BibleTimeline';
+import BibleIntro4 from './pages/BibleIntro4';
+import BibleMaps from './pages/BibleMaps';
+import Biblelogics from './pages/Biblelogics';
+import BibleKnowledge from './pages/BibleKnowledge';
+
 
 import CatholicPrayer1 from './pages/prayer/CatholicPrayer1';
 import CatholicPrayer2 from './pages/prayer/CatholicPrayer2';
@@ -72,6 +80,14 @@ function App() {
             <Route path="/bible" element={<Bible />} />
             <Route path="/bible-timeline" element={<BibleTimeline />} />
             <Route path="/prayers" element={<Prayers />} />
+
+            <Route path="/bible/intro1" element={<BibleIntro1 />} />
+            <Route path="/bible/intro2" element={<BibleIntro2 />} />
+            <Route path="/bible/timeline" element={<BibleTimeline />} />
+            <Route path="/bible/intro4" element={<BibleIntro4 />} />
+            <Route path="/bible/maps" element={<BibleMaps />} />
+            <Route path="/bible/logics" element={<Biblelogics />} />
+            <Route path="/bible/knowledge" element={<BibleKnowledge />} />
 
             {/* Catholic Prayers Subsections */}
             <Route path="/prayer/catholic/1" element={<CatholicPrayer1 />} />

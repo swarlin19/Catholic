@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const BibleTimeline = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-[#fffdf5] text-[#3a2c1f] font-['Noto Serif Tamil'] px-4 py-8">
-      <h1 className="text-3xl font-bold text-center mb-8">📜 விவிலிய நூல்களின் கால அட்டவணை</h1>
+      <h1 className="text-3xl font-bold text-center mb-8">📜விவிலிய நூல்களின் கால அட்டவணை</h1>
 
       {/* 🌿 Old Testament Paragraph */}
       <div className="max-w-5xl mx-auto leading-loose text-justify text-[17px] mb-10 whitespace-pre-line">
@@ -121,6 +123,16 @@ const BibleTimeline = () => {
       <p className="text-center text-sm text-gray-600 mt-8">
         © தொகுப்பு: அருள்திரு பவுல் லியோன் வறுவேல் (பஃபலோ மறைமாவட்டம்)
       </p>
+      {/* Back Button */}
+      <div className="text-center mt-12">
+        <button
+          onClick={() => navigate(-1)}
+          className="bg-pink-200 hover:bg-pink-300 text-pink-900 font-semibold px-6 py-2 rounded-lg shadow-md transition"
+        >
+          ← பின்செல் (Back)
+        </button>
+      </div>
+
     </div>
   );
 };

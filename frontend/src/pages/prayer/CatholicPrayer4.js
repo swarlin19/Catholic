@@ -6,7 +6,7 @@ const CatholicPrayer4 = () => {
     <div className="bg-[#fefcf5] text-[#3a2c1f] p-6 md:p-10 leading-loose tracking-wide">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          2.1.4 பொதுவான நவநாள் ஜெபங்கள்
+          பொதுவான நவநாள் ஜெபங்கள்
         </h1>
 
         <div className="max-w-5xl mx-auto whitespace-pre-line text-justify">

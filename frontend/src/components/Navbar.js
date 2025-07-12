@@ -11,7 +11,7 @@ const Navbar = () => {
         {/* Logo & Title */}
         <Link to="/" className="flex items-center gap-2 hover:text-yellow-300 text-lg sm:text-xl font-bold">
           <FaHome className="text-xl" />
-          <span>கத்தோலிக்க குரல் தமிழ்</span>
+          <span>CatholicVoiceTamil.com</span>
         </Link>
 
         {/* Desktop Links */}

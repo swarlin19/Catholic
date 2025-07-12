@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const BibleIntro2 = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-[#fffdf5] text-[#3d1f0f] p-6 font-['Noto Serif Tamil']">
-      <h1 className="text-3xl font-bold text-center mb-6">📖 திருவிவிலிய வளர்ச்சி - பாகம் 2</h1>
+      <h1 className="text-3xl font-bold text-center mb-6">📖முன்னுரை :</h1>
 
       {/* 🌿 Paragraph Content */}
       <div className="whitespace-pre-line leading-relaxed max-w-4xl mx-auto text-justify text-[17px] mb-12">
@@ -151,7 +153,16 @@ const BibleIntro2 = () => {
 
 `}
       </div>
-        
+        {/* Back Button */}
+      <div className="text-center mt-12">
+        <button
+          onClick={() => navigate(-1)}
+          className="bg-pink-200 hover:bg-pink-300 text-pink-900 font-semibold px-6 py-2 rounded-lg shadow-md transition"
+        >
+          ← பின்செல் (Back)
+        </button>
+      </div>
+
     </div>
   );
 };
